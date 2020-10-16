@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        if (window.innerWidth <= 992) {
+            document.location = "http://techfest.org/m/competitions";
+            window.location.replace('http://techfest.org/m/competitions');
+        }
+        window.addEventListener('resize', function(){
+            if (window.innerWidth <= 992) {
+                document.location = "http://techfest.org/m/competitions";
+                window.location.replace('http://techfest.org/m/competitions');
+            }
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81222017-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-81222017-1');
+    </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Scripts -->
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://techfest.org/2019/ca/images/favicon_logo.png">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+    @import  url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+    body {
+        /* background: url(https://robertsspaceindustries.com/rsi/static/images/gridbg_glow.png),
+        url(https://robertsspaceindustries.com/rsi/static/images/common/bg-stars-2560.jpg)
+        repeat; */
+        background-image: url("walle.jpg");
+        /* background-color: rgb(182, 40, 40); */
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        background-attachment: fixed;
+        color: rgba(255,255,255,0.9);
+        font-family: "Nunito Sans", sans-serif;
+        overflow-x:hidden
+    }
+    .row1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .compis-desc {
+        margin-bottom: 15px;
+        /* height: 250px; */
+    }
+    .row {
+        margin-bottom: 15px;
+        height: 255px;
+    }
+    .compis-logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+    }
+    .compis-desc:hover{
+        transform: scale(1.08);
+        transition: transform .5s ease;
+    }
+    .compis-content {
+        height: 100%;
+        background-color: rgba(75, 52, 88, 0.3);
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 0.5rem;
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+    }
+
+    .compis-content > p {
+        margin-bottom: 0.2rem;
+    }
+    .compis-name {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .compis-pm > span {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .compis-btn {
+        width: 9rem;
+    }
+    .tab-pane{
+        font-size: 1.2rem;
+    }
+
+    #prize-money, #num-compi, #num-parti {
+        font-weight: 600;
+    }
+    #prize-money:after {
+        content: ' +';
+    }
+    #num-parti:after {
+        content: ' +';
+    }
+    #num-compi:after {
+        content: ' +';
+    }
+    .compis-about{
+        font-size: 14px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="row1">
+
+
+
+
+
+
+
+        <div class="col-md-6 compis-desc">
+            <div class="row">
+                <div class="col-md-5 pr-0"><img class="compis-logo" src="mosaic.jpg" alt=""></div>
+                <div class="col-md-7 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">MOSAIC</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,00,000</span></p>
+                        <p class="compis-about mb-3">Mosaic is a machine learning and computer vision based event that emphasizes on exposing the learners to the buzzing and state-of-the-art field of artificial intelligence.</p>
+                        <a class="btn btn-outline-primary" href="http://techfest.org/competitions/defence">Explore More</a>                        
+                        <a class="btn btn-outline-success" href="http://techfest.org/competitions/defence/registration">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="col-md-6 compis-desc">
+            <div class="row">
+                <div class="col-md-5 pr-0"><img class="compis-logo" src="spybits.jpg" alt=""></div>
+                <div class="col-md-7 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">SPYBITS</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p>
+                        <p class="compis-about mb-3">SpyBits is a cryptography and cryptanalysis based event where participants will learn the art and science behind keeping the information secure from unintended audiences and even how to break into secrets of others by decoding the encoded data.</p>
+                        <a class="btn btn-outline-primary" href="http://techfest.org/competitions/aiclassifier">Explore More</a>
+                        <a class="btn btn-outline-success" href="http://techfest.org/competitions/aiclassifier/registration">Register</a>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 compis-desc">
+            <div class="row">
+                <div class="col-md-5 pr-0"><img class="compis-logo" src="ichip.jpg" alt=""></div>
+                <div class="col-md-7 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">I-CHIP</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p>
+                        <p class="compis-about mb-3">I-Chip is a Verilog HDL based event. The participants are given an exciting problem statement and are expected to code its solution in Verilog, simulate their code and implement it on FPGA board.</p>
+                        <a class="btn btn-outline-primary" href="http://techfest.org/competitions/dremio">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="http://techfest.org/competitions/dremio/registration">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 compis-desc">
+            <div class="row">
+                <div class="col-md-5 pr-0"><img class="compis-logo" src="commnet.jpg" alt=""></div>
+                <div class="col-md-7 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">COMMNET</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p>
+                        <p class="compis-about mb-3">Commnet is a digital communication based event where we explore various components and processes used in digital communication systems such as modulation and coding theory and implement them to solve various challenges using MATLAB.</p>
+                        <a class="btn btn-outline-primary" href="http://techfest.org/competitions/dremio">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="http://techfest.org/competitions/dremio/registration">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 compis-desc">
+            <div class="row">
+                <div class="col-md-5 pr-0"><img class="compis-logo" src="continum.jpg" alt=""></div>
+                <div class="col-md-7 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">CONTINUUM</p>
+                        <p class="compis-pm">Prize Money: <span>INR 40,000</span></p>
+                        <p class="compis-about mb-3">Continuum is an analog electronics based technical event. The participants get exposure to the simulation of different circuits with desired specifications using a simulation software (usually ORCAD) and hardware implementation of the same.</p>
+                        <a class="btn btn-outline-primary" href="http://techfest.org/competitions/cozmo">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="http://techfest.org/competitions/cozmo/registration">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 compis-desc">
+            <div class="row">
+                <div class="col-md-5 pr-0"><img class="compis-logo" src="digisim.jpg" alt=""></div>
+                <div class="col-md-7 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">DIGISIM</p>
+                        <p class="compis-pm">Prize Worth: <span>INR 60,000</span></p>
+                        <p class="compis-about mb-3">Digisim is a digital electronics based event where the participants get to design optimised digital circuits and their proteus simulations.</p>
+                        <a class="btn btn-outline-primary" href="http://techfest.org/competitions/olympiad">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="http://techfest.org/competitions/olympiad/registration">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 compis-desc">
+            <div class="row">
+                <div class="col-md-5 pr-0"><img class="compis-logo" src="xiota.jpg" alt=""></div>
+                <div class="col-md-7 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">X-IOT-A</p>
+                        <p class="compis-pm">Prize Money: <span>INR 50,000</span></p>
+                        <p class="compis-about mb-3">Sorry for the inconvenience, X-IOT-A event has been scraped.
+                            X-IoT-A is an event based on internet of things. In this event we will solve various real world problems through IOT. Competitors thinks about various ideas and implement it.</p>
+                        <a class="btn btn-outline-primary" href="http://techfest.org/competitions/bridge">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="http://techfest.org/competitions/bridge/registration">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 compis-desc">
+            <div class="row">
+                <div class="col-md-5 pr-0"><img class="compis-logo" src="cassandra.jpg" alt=""></div>
+                <div class="col-md-7 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">CASSANDRA</p>
+                        <p class="compis-pm">Prize Money: <span>INR 50,000</span></p>
+                        <p class="compis-about mb-3">Our greek goddess Cassandra who was cursed by Apollo that she colud see the future and predict prophecies.</p>
+                        <a class="btn btn-outline-primary" href="http://techfest.org/competitions/aerovaccine">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="http://techfest.org/competitions/aerovaccine/registration">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
