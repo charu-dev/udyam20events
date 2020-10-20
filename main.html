@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- backtotop??????????????????????????????????????????? -->
+
+<link rel="stylesheet" href="main.css">
+
+    <!-- speaker????????? -->
+    <link rel="stylesheet" href="speaker.css">
+    <!-- schedule -->
+    <link rel="stylesheet" href="main.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- events -->
+
+
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+    @import  url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+    body {
+        /* background: url(https://robertsspaceindustries.com/rsi/static/images/gridbg_glow.png),
+        url(https://robertsspaceindustries.com/rsi/static/images/common/bg-stars-2560.jpg)
+        repeat; */
+        background-image: url("walle.jpg");
+        /* background-color: rgb(182, 40, 40); */
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        background-attachment: fixed;
+        color: rgba(255,255,255,0.9);
+        font-family: "Nunito Sans", sans-serif;
+        overflow-x:hidden
+    }
+    .row1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .compis-desc {
+        margin-bottom: 15px;
+        /* height: 250px; */
+    }
+    .row {
+        margin-bottom: 15px;
+        height: 255px;
+    }
+    .compis-logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+    }
+    .compis-desc:hover{
+        transform: scale(1.03);
+        transition: transform .5s ease;
+    }
+    .compis-content {
+        height: 100%;
+        background-color: rgba(75, 52, 88, 0.3);
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 0.5rem;
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+    }
+
+    .compis-content > p {
+        margin-bottom: 0.2rem;
+    }
+    .compis-name {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .compis-pm > span {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .compis-btn {
+        width: 9rem;
+    }
+    .tab-pane{
+        font-size: 1.2rem;
+    }
+
+    #prize-money, #num-compi, #num-parti {
+        font-weight: 600;
+    }
+    #prize-money:after {
+        content: ' +';
+    }
+    #num-parti:after {
+        content: ' +';
+    }
+    #num-compi:after {
+        content: ' +';
+    }
+    .compis-about{
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 900px) {
+    .row1{
+        display: block;
+    }
+    .row{
+        width: 700px;
+        margin-bottom: 100px;
+    }
+    .compis-desc{
+        margin-bottom: 50px;
+        width: 700px;
+    }
+
+}
+
+
+</style>
+</head>
+<body>
+    <a id="button"></a>
+    <div class="row1">
+
+
+
+
+
+
+
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="mosaic.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">MOSAIC</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,00,000</span></p>
+                        <p class="compis-about mb-3">Mosaic is a machine learning and computer vision based event that emphasizes on exposing the learners to the buzzing and state-of-the-art field of artificial intelligence.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>                        
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="spybits.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">SPYBITS</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p>
+                        <p class="compis-about mb-3">SpyBits is a cryptography and cryptanalysis based event where participants will learn the art and science behind keeping the information secure from unintended audiences and even how to break into secrets of others by decoding the encoded data.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+                        <a class="btn btn-outline-success" href="">Register</a>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="ichip.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">I-CHIP</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p>
+                        <p class="compis-about mb-3">I-Chip is a Verilog HDL based event. The participants are given an exciting problem statement and are expected to code its solution in Verilog, simulate their code and implement it on FPGA board.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="comm.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">COMMNET</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p>
+                        <p class="compis-about mb-3">Commnet is a digital communication based event where we explore various components and processes used in digital communication systems such as modulation and coding theory and implement them to solve various challenges using MATLAB.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="continum.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">CONTINUUM</p>
+                        <p class="compis-pm">Prize Money: <span>INR 40,000</span></p>
+                        <p class="compis-about mb-3">Continuum is an analog electronics based technical event. The participants get exposure to the simulation of different circuits with desired specifications using a simulation software (usually ORCAD) and hardware implementation of the same.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="digisim.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">DIGISIM</p>
+                        <p class="compis-pm">Prize Worth: <span>INR 60,000</span></p>
+                        <p class="compis-about mb-3">Digisim is a digital electronics based event where the participants get to design optimised digital circuits and their proteus simulations.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="xiota.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">X-IOT-A</p>
+                        <p class="compis-pm">Prize Money: <span>INR 50,000</span></p>
+                        <p class="compis-about mb-3">Sorry for the inconvenience, X-IOT-A event has been scraped.
+                            X-IoT-A is an event based on internet of things. In this event we will solve various real world problems through IOT. Competitors thinks about various ideas and implement it.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="cassandra.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">CASSANDRA</p>
+                        <p class="compis-pm">Prize Money: <span>INR 50,000</span></p>
+                        <p class="compis-about mb-3">Our greek goddess Cassandra who was cursed by Apollo that she colud see the future and predict prophecies.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="funkit.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">FUNKIT</p>
+                        <p class="compis-pm">Prize Money: <span>INR 50,000</span></p>
+                        <p class="compis-about mb-3">FUNCKIT about solving a computational problem by hardware implementation of digital circuits. We manipulate logic gates and digital ICs to optimize hardware and execution time.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- speaker -->
+
+<div class="speakers col-24">
+    <div class="wrap col-md-3 col-12">
+  
+        <div class="card">
+          <div class="card-liner">
+          <figure><img src="https://cdn.cdnparenting.com/articles/2019/01/08144652/1205497240-H-1024x700.jpg" alt="" />       </figure>
+          <div class="card--social">
+            <ul>
+              <li class="twitter"><a href="#0"><i class="fa fa-twitter"></i></a></li>
+              <li class="linkedin"><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="card--title">
+            <h3>Colin McGraw</h3>
+            <p>Web Developer</p>
+          </div>
+          <div class="card--desc">
+            <hr />
+            <p>Coffee, code, repeat... he doesn't eat food, and only stops to defend the table tennis crown.</p>
+          </div>
+            <div class="card--btn">
+              <a href="#0">
+                <span class="moreinfo"><i class="fa fa-info-circle"></i> More Info</span>
+                <span class="fullprof">View Full Profile</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    <div class="wrap col-md-3 col-12">
+  
+        <div class="card">
+          <div class="card-liner">
+          <figure><img src="https://cdn.cdnparenting.com/articles/2019/01/08144652/1205497240-H-1024x700.jpg" alt="" />       </figure>
+          <div class="card--social">
+            <ul>
+              <li class="twitter"><a href="#0"><i class="fa fa-twitter"></i></a></li>
+              <li class="linkedin"><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="card--title">
+            <h3>Colin McGraw</h3>
+            <p>Web Developer</p>
+          </div>
+          <div class="card--desc">
+            <hr />
+            <p>Coffee, code, repeat... he doesn't eat food, and only stops to defend the table tennis crown.</p>
+          </div>
+            <div class="card--btn">
+              <a href="#0">
+                <span class="moreinfo"><i class="fa fa-info-circle"></i> More Info</span>
+                <span class="fullprof">View Full Profile</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    <div class="wrap col-md-3 col-12">
+  
+        <div class="card">
+          <div class="card-liner">
+          <figure><img src="https://cdn.cdnparenting.com/articles/2019/01/08144652/1205497240-H-1024x700.jpg" alt="" />       </figure>
+          <div class="card--social">
+            <ul>
+              <li class="twitter"><a href="#0"><i class="fa fa-twitter"></i></a></li>
+              <li class="linkedin"><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="card--title">
+            <h3>Colin McGraw</h3>
+            <p>Web Developer</p>
+          </div>
+          <div class="card--desc">
+            <hr />
+            <p>Coffee, code, repeat... he doesn't eat food, and only stops to defend the table tennis crown.</p>
+          </div>
+            <div class="card--btn">
+              <a href="#0">
+                <span class="moreinfo"><i class="fa fa-info-circle"></i> More Info</span>
+                <span class="fullprof">View Full Profile</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+</div>
+
+
+      
+      
+    <!-- schedule -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-timeline3">
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                    
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                    
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="main.js"></script>
+
+
+
+</body>
+</html>
